@@ -5,10 +5,19 @@ import LanguageIcon from "@material-ui/icons/Language";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Avatar } from "@material-ui/core";
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { ThemeContext } from './context';
 
 function Header() {
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
-        <div className='header'>
+        // BEM
+        <div className='header' style={{
+            backgroundColor: darkMode ? "#222" : "white",
+            color: darkMode && "white",
+        }}>
             <Link to='/'>
                 <img
                     className="header__icon"
@@ -17,8 +26,15 @@ function Header() {
                 />
             </Link>
 
-            <div className='header__center'>
-                <input type='text' />
+            {/* BEM */}
+            <div className='header__center' style={{
+                backgroundColor: darkMode ? "#222" : "white",
+                color: darkMode && "white",
+            }}>
+                <input type='text' style={{
+                    backgroundColor: darkMode ? "#222" : "white",
+                    color: darkMode && "white",
+                }} />
                 <SearchIcon />
             </div>
 

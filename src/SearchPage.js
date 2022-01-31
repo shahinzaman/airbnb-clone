@@ -2,18 +2,39 @@ import { Button } from '@material-ui/core'
 import React from 'react'
 import './SearchPage.css'
 import SearchResult from './SearchResult'
+import { useContext } from 'react';
+import { ThemeContext } from './context';
 
 function SearchPage() {
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <div className='searchPage'>
             <div className='searchPage__info'>
                 <p>62 stays · 26 august to 30 august · 2 guest</p>
                 <h1>Stays nearby</h1>
-                <Button variant="outlined">Cancellation Flexibility</Button>
-                <Button variant="outlined">Type of place</Button>
-                <Button variant="outlined">Price</Button>
-                <Button variant="outlined">Rooms and beds</Button>
-                <Button variant="outlined">More filters</Button>
+                {/* BEM */}
+                <Button variant="outlined" style={{
+                    backgroundColor: darkMode ? "LightGray" : "white",
+                    color: darkMode ? "#222" : "#222",
+                }}>Cancellation Flexibility</Button>
+                <Button variant="outlined" style={{
+                    backgroundColor: darkMode ? "LightGray" : "white",
+                    color: darkMode ? "#222" : "#222",
+                }}>Type of place</Button>
+                <Button variant="outlined" style={{
+                    backgroundColor: darkMode ? "LightGray" : "white",
+                    color: darkMode ? "#222" : "#222",
+                }}>Price</Button>
+                <Button variant="outlined" style={{
+                    backgroundColor: darkMode ? "LightGray" : "white",
+                    color: darkMode ? "#222" : "#222",
+                }}>Rooms and beds</Button>
+                <Button variant="outlined" style={{
+                    backgroundColor: darkMode ? "LightGray" : "white",
+                    color: darkMode ? "#222" : "#222",
+                }}>More filters</Button>
             </div>
             <SearchResult
                 img="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_wbPYTxQPMcBh7SPzLFActXnP3uhifeVT_g&usqp=CAU"
