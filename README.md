@@ -1,3 +1,8 @@
+#### This project is inspired by --> ####
+##### YouTube: https://www.youtube.com/watch?v=BtJeH_-XYaA&ab_channel=CleverProgrammer #####
+##### GitHub: https://github.com/CleverProgrammer/airbnb-clone #####
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
