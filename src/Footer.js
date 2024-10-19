@@ -13,8 +13,8 @@ function Footer() {
             backgroundColor: darkMode ? "#222" : "white",
             color: darkMode && "white",
         }}>
-            <p>© 2020 Airbnb clone! No rights reserved - this is a demo!</p>
-            <p>Privacy · Terms · Sitemap · Company Details</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adi</p>
         </div>
     )
 }
